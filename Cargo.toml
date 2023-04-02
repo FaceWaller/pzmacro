@@ -1,0 +1,12 @@
+[package]
+name = "rust_macro"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+derive = { path = "derive" }
+syn = "1.0"
+quote = "1.0"
+
+
