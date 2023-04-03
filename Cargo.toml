@@ -2,6 +2,8 @@
 name = "pzmacro"
 version = "0.1.0"
 edition = "2021"
+description = "general macro"
+license = "MIT"
 
 [lib]
 proc-macro = true
