@@ -3,6 +3,26 @@ use quote::{quote, format_ident};
 use syn::{DeriveInput, parse_macro_input, Data, Fields, Type};
 use proc_macro2::TokenStream as TokenStream2; // 使用TokenStream的from_iter能力
 
+/* 
+/// Demo
+
+#[derive(Builder)]
+#[derive(Debug)]
+pub struct Command{
+    pub executable: Option<String>,
+    pub args: Vec<i32>,
+    pub current_dir: String,
+}
+
+#[test]
+fn test_builder() {
+    println!("start-------------");
+    let com = Command::builder().executable(Some("123".to_string())).args(vec![1,2,3]).current_dir("id".to_string()).build();
+    println!("com {:?}", com);
+    println!("end  -------------");
+}
+*/
+
 #[proc_macro_derive(Builder)]
 pub fn derive_builder(input: TokenStream) -> TokenStream {
     let input = parse_macro_input!(input as DeriveInput); // 解析input为 DeriveInput类型
