@@ -1,6 +1,6 @@
 [package]
 name = "pzmacro"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 description = "general macro"
 license = "MIT"
