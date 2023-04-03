@@ -1,8 +1,8 @@
 [package]
 name = "pzmacro"
-version = "0.2.0"
+version = "0.3.0"
 edition = "2021"
-description = "general macro"
+description = "general macro; demo: https://github.com/FaceWaller/pzmacro"
 license = "MIT"
 
 [lib]
