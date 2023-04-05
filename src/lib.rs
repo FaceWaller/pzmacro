@@ -29,7 +29,7 @@ pub fn derive_builder(input: TokenStream) -> TokenStream {
     let input_ident = input.ident;  // 获取原始类名
     let ident_builder = format_ident!("{}Builder", input_ident.to_string()); // 拼接builder类名
 
-    if let Data::Struct(r) = input.data {   // 处理
+    if let Data::Struct(r) = input.data {   // 处理结构体
         let fields = r.fields;
 
         // 结构体属性声明
