@@ -18,7 +18,8 @@ pub fn log_func_info(_: TokenStream, input: TokenStream) -> TokenStream {
             let __log_result = { #func_block };
             let end_time = std::time::Instant::now();
             let duration = end_time - start_time;
-            println!("fun {} ends time: {:?}", stringify!(#func_name), duration);
+            println!("fun {} ends", stringify!(#func_name));
+            println!("fun {} execution time: {:?}", stringify!(#func_name), duration);
             __log_result
         }
     };
