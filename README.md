@@ -6,3 +6,4 @@
 
 1. 辅助struct初始化的builder宏
 2. 提供打印函数开始和结束的log_func_info宏
+3. log_func_info宏增加函数执行时间
